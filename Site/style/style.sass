@@ -1,0 +1,18 @@
+@use 'variables'
+
+@import '_mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    font-size: variables.$fontsize 
+    color: variables.$FontColor
+header
+    height: variables.$altura
+    background: variables.$purple
+    nav
+        height: variables.$altura
+        @include displayFlex($direction: row, $justify: space-evenly, $align: center , $gap: 20px)
+        a
