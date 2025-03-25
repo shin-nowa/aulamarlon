@@ -28,6 +28,7 @@ function buscador(){
         })
     }) // receber a resposta positiva
     .catch(error => {
+        alert('Pokemon não encontrado')
         console.log(error)
     }) //receber um eventual erro
 }
