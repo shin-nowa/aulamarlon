@@ -32,3 +32,13 @@ function buscador(){
         console.log(error)
     }) //receber um eventual erro
 }
+
+
+// adicionando a tecla enter para funcionar o buscador
+let input = document.querySelector('#pokemon') // id usa #
+// informar qual evento e qual função ele vai ativar
+input.addEventListener('keyup', (event)=>{
+    if(event.key == "Enter"){
+        buscador()
+    }
+})
